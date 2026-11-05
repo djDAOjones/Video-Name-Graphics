@@ -11,3 +11,6 @@
      commit is also a line here or in the backlog (rule 5). -->
 
 ## Open
+
+- VNG-1.1 — `redact()` denies this app's typed fields by key (the second line, the role) once VNG-5 names them; today it denies `name` and `title` only — (from: VNG-1, 2026-11-05)
+- VNG-1.2 — npm audit reports 16 advisories in the dev tooling (1 high, in markdownlint-cli2's markdown-it), the same set as the Finisher's; none ships in the build; an update is a decision — (from: VNG-1, 2026-11-05)

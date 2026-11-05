@@ -19,6 +19,14 @@
      moves the oldest entries verbatim to project/decisions-{YYYY-MM}.md
      and adds one line to project/archive-index.md. -->
 
+## 2026-11-05 — VNG-1 — The seed: the Finisher's tooling, core and shell copied at 27f51dd; the neutral pack a grey ramp; the gate without the neutral-build check until VNG-2
+
+**Decision:** the seed copies the Finisher's dev tooling (its nine dev dependencies, no runtime one), `src/core/` and `tokens.carbon.css` at 27f51dd, cuts `app.css` to the rules the shell's elements use, and gives the neutral pack Carbon's grey ramp for every colour role; `app.css` imports `brands/neutral/tokens.css` directly and the gate is the Finisher's code and docs checks plus the v3 checker — because VNG-1's criteria say so, and the build-time pack choice and the neutral-build check are VNG-2's.
+
+**Rationale:** The neutral pack's rule is "a palette chosen for contrast alone" (brands/README.md); a grey ramp is no organisation's colour, and Carbon's grey steps already sit beside its status ramp in `tokens.carbon.css`. Light: grey-10 page, white panels, grey-100 text, grey-70 secondary (7.1:1 on grey-10, the tightest pair), grey-90 primary; dark and `.on-brand`: grey-100 ground, white text, grey-20 secondary, grey-10 primary; every pair is held by `test/contrast.test.ts`. The neutral band has no logo, so `--brand-logo-height` is the 44 px target floor, room for VNG-4's switcher. `app.css` keeps only rules a shell element uses — skip link, focus, bands, title, lede, version line, the body and title type roles and the forced-colours focus ring — so the item's "Finisher lines 1–475 and the page title, status, mono and forced-colours rules" yielded no status or mono rule: the shell has neither element. Not copied: the Finisher's Xerte build mode (VNG-9), branding-asset plugins, the audio tests' 30 s timeout, `check:placeholders`, `check:build`, `check:memory`. The UoN-only contrast assertions (no black, Nottingham Blue grounds) go with VNG-2's UoN pack. `src/main.ts` is a new cut of the Finisher's: error capture and the version line. `.claude/launch.json` names this project's dev server.
+
+**Supersedes:** none
+
 ## 2026-11-05 — PLAN-1 — Phases 1 and 2: the seed, the brand packs and the output format, then one graphic end to end
 
 **Decision:** Phase 1 is VNG-1 to VNG-4, the seed, the brand packs, the output spike and the three languages; Phase 2 is VNG-5 to VNG-7, one graphic end to end; the release items VNG-8 and VNG-9 follow — because the owner approved this order on 2026-11-05.

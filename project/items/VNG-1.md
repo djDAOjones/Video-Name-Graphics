@@ -22,7 +22,7 @@ the plumbing. Everything is copied from the UoN Video Finisher at
 
 Updated: 2026-11-05
 
-Next step: copy the configs and src/core/, then cut `app.css`.
+Next step: None.
 
 Open question: None.
 
@@ -38,3 +38,5 @@ Open question: None.
 - 2026-11-05 — Found while planning, in the Finisher: `app.css` names `--uon-logo-*` at lines 154–170 (the header logo) and other `--uon-*` tokens at 1400–1436 (closing controls, not needed here); the logo variables become a pack's `--brand-logo-*`. src/ui/brand-assets.ts finds the logo and Lora by `import.meta.glob`, which is the pattern VNG-2's pack assets follow. The Finisher tracks src/assets/uon-logo-white.svg in its public repository; this project keeps it in brands/uon/assets/ (VNG-2), under the same precedent.
 - 2026-11-05 — The Finisher's i18n machinery (src/i18n/index.ts, `bind.ts`, `compile.ts`, `intl.ts`, `preference.ts`) and src/ui/language-switcher.ts are VNG-4's, with new, small tables; its `en-GB.ts`, `zh-Hans.ts` and `ms-MY.ts` are the Finisher's words and are not copied.
 - 2026-11-05 — Not copied: src/media/, src/audio/, src/workers/, test/ebu3341/, the spikes, `samples/`, `docs/`, `DEV-INFRASTRUCTURE.md`.
+- 2026-11-05 — At close: GitHub Pages was not enabled for the repository (the API answered 404), so the deploy job would fail at configure-pages. Asked through the planning session; the owner's words, 2026-11-05, relayed by it: "Yes, turn it on". Pages enabled with GitHub Actions as the source. No other owner instruction for this item is recorded.
+- 2026-11-05 — The built-in browser's preview started the Finisher's dev server, not this one, so the shell was checked on the deployed preview instead.

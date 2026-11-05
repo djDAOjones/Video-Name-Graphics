@@ -14,7 +14,6 @@
 
 ### Phase 1 — the seed, the brand packs and the output format
 
-- [ ] VNG-1 — The seed: the Finisher's tooling, core and tokens copied at a named commit, a page shell, the gate green in CI — since 2026-11-05
 - [ ] VNG-2 — Brand packs: `brands/neutral` and `brands/uon` chosen at build time, and the check that the neutral build carries no UoN — since 2026-11-05
 - [ ] VNG-3 — The output spike: the transparent video Clipchamp keeps, at 4K and HD, its size and time measured, and the PNG — since 2026-11-05
 - [ ] VNG-4 — The three languages: the Finisher's language machinery and switcher, the page's words in en-GB, zh-Hans and ms-MY — since 2026-11-05

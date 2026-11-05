@@ -14,3 +14,5 @@
      the one above it or a phase's newest line after the phase above. -->
 
 ## Phase 1 — the seed, the brand packs and the output format
+
+- VNG-1 — the seed: the Finisher's tooling, core and tokens copied at 27f51dd, the neutral pack's grey palette at AAA, a page shell, the gate green and the preview deployed (2026-11-05) — see decisions
